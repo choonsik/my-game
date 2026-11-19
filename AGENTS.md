@@ -32,6 +32,14 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `skills update`는 복사 방식을 보존하지 않으므로 사용하지 않는다. `update --copy`도 대안으로 사용하지 않는다.
 - 이 정책은 업데이트된 `update-project-skills` 본문이 symlink를 요구하더라도 우선한다. 스킬을 직접 수정할 때도 두 복사본을 함께 반영하고, 완료 시 symlink가 없는지와 두 복사본의 파일 내용이 같은지 확인한다.
 
+<!-- BEGIN add-stack-context: cesiumjs -->
+# CesiumJS · Cesium ion
+
+- CesiumJS 작업을 시작할 때 설치된 공식 스킬 `using-cesiumjs-skills`와 해당 영역의 `cesiumjs-*` 스킬(CesiumGS/cesiumjs-skills)을 먼저 읽는다. 갱신은 `skills add cesiumgs/cesiumjs-skills --skill <설치된 이름들> --agent codex claude-code --copy -y`로 한다.
+- 스킬은 특정 CesiumJS 버전(현재 1.144) 기준이다. 코드를 쓰기 전에 `node_modules/cesium/package.json`의 설치 버전을 확인하고, 그 사이의 변경은 공식 [CHANGES.md](https://github.com/CesiumGS/cesium/blob/main/CHANGES.md)와 [API 레퍼런스](https://cesium.com/learn/cesiumjs/ref-doc/)를 작업 시점에 직접 조회해 맞춘다. 복사해 둔 사본을 최신으로 여기지 않는다.
+- 지도·타일 소스와 token 사용 한도는 `docs/decisions/map-3d-source.md`를 따른다.
+<!-- END add-stack-context: cesiumjs -->
+
 # 브라우저 검증
 
 - 실행 중인 앱의 런타임 검증은 `next-dev-loop` 스킬(`/_next/mcp` + `agent-browser`)로 한다. 브라우저 확인을 요구하는 다른 스킬(`implement`, `build-prototype` 등)도 같은 도구를 쓴다.

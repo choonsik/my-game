@@ -36,6 +36,118 @@
       "computedHash": "eba16813afffdfd4c99f3316d94f6120dafce1dce3e9603c984866152d3a3230",
       "installMode": "copy"
     },
+    "cesiumjs-3d-tiles": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-3d-tiles/SKILL.md",
+      "computedHash": "a9e082dde6fe9aa47b9aa2ae282fcd177501f347bd1401e8aeda7b027c06deae",
+      "installMode": "copy"
+    },
+    "cesiumjs-camera": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-camera/SKILL.md",
+      "computedHash": "3bd6978a2fedcce8cc7e8234c350465c5b5c7a430e6a8e0889af76a8b95c1f4e",
+      "installMode": "copy"
+    },
+    "cesiumjs-core-utilities": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-core-utilities/SKILL.md",
+      "computedHash": "8252896907cfe75e3ee3f6b4b5fa67aed28b59962d7aeb260961a594b263911f",
+      "installMode": "copy"
+    },
+    "cesiumjs-custom-shader": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-custom-shader/SKILL.md",
+      "computedHash": "65a97c0b62b399e183b0c1acfa3c8d29332e658c6e4325e6e4bf9b2604c3ee4e",
+      "installMode": "copy"
+    },
+    "cesiumjs-entities": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-entities/SKILL.md",
+      "computedHash": "ebce3a2249c1690df245dad857d88df5988120b444e84f0482d412a10f51e2a2",
+      "installMode": "copy"
+    },
+    "cesiumjs-imagery": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-imagery/SKILL.md",
+      "computedHash": "2cdbf18f04ecba8890cf9d229f9fa521bdc813184e3b7f55829a7d5e2c0bd8f6",
+      "installMode": "copy"
+    },
+    "cesiumjs-interaction": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-interaction/SKILL.md",
+      "computedHash": "5782e65eb3f7bc1cbe16ef8023f190e55372766b6a5bd8f6f8aeb492ff00eb11",
+      "installMode": "copy"
+    },
+    "cesiumjs-materials-shaders": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-materials-shaders/SKILL.md",
+      "computedHash": "bd925b21f7b72e2737ca98e0923294042f368b238d229c12b78f9cabab83f1e8",
+      "installMode": "copy"
+    },
+    "cesiumjs-models-particles": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-models-particles/SKILL.md",
+      "computedHash": "3608ce5b53c6ed0a7e82c417574cc876dc5d314ef57d02771f74c7cfb21c562c",
+      "installMode": "copy"
+    },
+    "cesiumjs-primitives": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-primitives/SKILL.md",
+      "computedHash": "6fe20d9376797a87277ead79a41363d55e87261f150662a8e69e1a573a5bdd36",
+      "installMode": "copy"
+    },
+    "cesiumjs-spatial-math": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-spatial-math/SKILL.md",
+      "computedHash": "b50b200423328784cebeddc83e6f2db5f01c5245d4705308e9b28a2ff4a7e2fb",
+      "installMode": "copy"
+    },
+    "cesiumjs-terrain-environment": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-terrain-environment/SKILL.md",
+      "computedHash": "91ba385df8ec439cf19884929117abda933d18dbae22d37c904429254510a69c",
+      "installMode": "copy"
+    },
+    "cesiumjs-time-properties": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-time-properties/SKILL.md",
+      "computedHash": "8b206c95db72a86edffed74424d9bf7a08658db159005710d3b417ec9fcc7719",
+      "installMode": "copy"
+    },
+    "cesiumjs-viewer-setup": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/cesiumjs-viewer-setup/SKILL.md",
+      "computedHash": "54c9c68c34e740fccd6e1c27c3ef52b6e166be0a20ca6b7ed43c2174ca7204bc",
+      "installMode": "copy"
+    },
     "clean-branches": {
       "source": "toy-crane/skills",
       "sourceType": "github",
@@ -195,6 +307,14 @@
       "sourceType": "github",
       "skillPath": "skills/workflow/update-project-skills/SKILL.md",
       "computedHash": "f43fa9cf4d273197f5c84aa33f6a5ce2e991a6aab1893e471919bbbdb3c003e6",
+      "installMode": "copy"
+    },
+    "using-cesiumjs-skills": {
+      "source": "cesiumgs/cesiumjs-skills",
+      "commit": "5f4792c09c4496f214ba9679cac6d7b3b014dcdd",
+      "sourceType": "github",
+      "skillPath": "skills/using-cesiumjs-skills/SKILL.md",
+      "computedHash": "ba2861f85034a8d8fadc165793d94d87d8be5e9d6e4609d9642a6f69fe3cb7fd",
       "installMode": "copy"
     }
   }
