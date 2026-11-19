@@ -16,6 +16,8 @@ const eslintConfig = defineConfig([
     // .claude/worktrees holds duplicate checkouts of this app.
     ".claude/**",
     ".agents/**",
+    // Cesium static assets copied from node_modules at dev/build time.
+    "public/cesium/**",
   ]),
 ]);
 

@@ -1,16 +1,24 @@
-import { render, screen } from "@testing-library/react";
-import { expect, test } from "vitest";
+import { render, screen, within } from "@testing-library/react";
+import { expect, test, vi } from "vitest";
 
-import Home from "@/app/page";
+import { CitySelect } from "@/app/_game/city-select";
+import { cities } from "@/modules/city";
 
-test("홈 화면은 시작 안내 제목과 배포 링크를 보여준다", () => {
-  render(<Home />);
-
-  expect(
-    screen.getByRole("heading", { level: 1, name: /To get started/i })
-  ).toBeInTheDocument();
-  expect(screen.getByRole("link", { name: /Deploy Now/i })).toHaveAttribute(
-    "href",
-    expect.stringContaining("vercel.com/new")
+test("첫 화면은 도쿄, 뉴욕, 파리와 각 도시의 최고 기록 또는 기록 없음을 보여 준다", () => {
+  render(
+    <CitySelect
+      cities={cities}
+      bestTimes={{ tokyo: 65_300, "new-york": null, paris: null }}
+      onSelect={vi.fn()}
+    />
   );
+
+  const items = within(screen.getByRole("list", { name: "도시 목록" })).getAllByRole("listitem");
+  expect(items.map((item) => within(item).getByText(/도쿄|뉴욕|파리/).textContent)).toEqual([
+    "도쿄",
+    "뉴욕",
+    "파리",
+  ]);
+  expect(within(items[0]).getByText("1:05.3")).toBeInTheDocument();
+  expect(within(items[1]).getByText("기록 없음")).toBeInTheDocument();
 });

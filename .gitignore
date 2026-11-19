@@ -24,6 +24,9 @@
 # production
 /build
 
+# cesium static assets (copied from node_modules by scripts/copy-cesium-assets.mjs)
+/public/cesium
+
 # misc
 .DS_Store
 *.pem
