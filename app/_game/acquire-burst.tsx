@@ -12,6 +12,11 @@ const pick = <T,>(items: T[]) => items[Math.floor(Math.random() * items.length)]
 /** 플래그를 획득한 순간의 보물 발견 이펙트. 매번 모양과 문구가 무작위로 바뀐다. */
 export function AcquireBurst({ onDone }: { onDone: () => void }) {
   const ref = useRef<HTMLDivElement>(null);
+  // 부모가 다시 렌더될 때마다 onDone이 바뀌어도 이펙트를 처음부터 다시 틀지 않는다.
+  const onDoneRef = useRef(onDone);
+  useEffect(() => {
+    onDoneRef.current = onDone;
+  });
 
   useEffect(() => {
     const root = ref.current;
@@ -70,13 +75,13 @@ export function AcquireBurst({ onDone }: { onDone: () => void }) {
       );
     }
 
-    const timer = setTimeout(onDone, 1600);
+    const timer = setTimeout(() => onDoneRef.current(), 1600);
     return () => {
       clearTimeout(timer);
       animations.forEach((a) => a.cancel());
       root.replaceChildren();
     };
-  }, [onDone]);
+  }, []);
 
   return <div ref={ref} aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden" />;
 }
