@@ -13,19 +13,20 @@ export type City = {
 // 한 판이 10분 안팎에 끝나도록 도시마다 중심부 몇 km 안의 명소만 고른다.
 export const cities: City[] = [
   {
-    id: "seoul",
-    name: "서울",
+    // 서울은 Google 실사 3D 타일에 건물 데이터가 없어 넣지 않는다 (docs/decisions/map-3d-source.md).
+    id: "tokyo",
+    name: "도쿄",
     landmarks: [
-      { name: "경복궁", latitude: 37.5796, longitude: 126.977 },
-      { name: "광화문광장", latitude: 37.5725, longitude: 126.9769 },
-      { name: "서울시청", latitude: 37.5663, longitude: 126.9779 },
-      { name: "숭례문", latitude: 37.56, longitude: 126.9754 },
-      { name: "명동성당", latitude: 37.5633, longitude: 126.9873 },
-      { name: "N서울타워", latitude: 37.5512, longitude: 126.9882 },
-      { name: "창덕궁", latitude: 37.5794, longitude: 126.991 },
-      { name: "인사동", latitude: 37.574, longitude: 126.9852 },
-      { name: "동대문디자인플라자", latitude: 37.5669, longitude: 127.0095 },
-      { name: "청계광장", latitude: 37.5693, longitude: 126.9784 },
+      { name: "도쿄역", latitude: 35.6812, longitude: 139.7671 },
+      { name: "고쿄(황거)", latitude: 35.6852, longitude: 139.7528 },
+      { name: "긴자 욘초메", latitude: 35.6717, longitude: 139.765 },
+      { name: "도쿄 타워", latitude: 35.6586, longitude: 139.7454 },
+      { name: "히비야 공원", latitude: 35.6737, longitude: 139.7562 },
+      { name: "국회의사당", latitude: 35.6759, longitude: 139.7448 },
+      { name: "도쿄 국제포럼", latitude: 35.6768, longitude: 139.7637 },
+      { name: "니혼바시", latitude: 35.684, longitude: 139.7745 },
+      { name: "롯폰기 힐스", latitude: 35.6604, longitude: 139.7292 },
+      { name: "쓰키지 혼간지", latitude: 35.6664, longitude: 139.7722 },
     ],
   },
   {
